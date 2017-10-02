@@ -1,0 +1,163 @@
+
+
+
+
+#master-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 102px 331px 64px 206px auto auto auto auto 150px;
+    grid-template-areas: "header header header header header header header header header header header header"
+    "introbilde introbilde introbilde introbilde introbilde introbilde introbilde introbilde introbilde introbilde introbilde introbilde"
+    "dag dag dag dag dag dag dag dag dag dag dag dag"
+    "frister frister frister frister frister frister forelesninger forelesninger forelesninger forelesninger forelesninger forelesninger"
+    "h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler h2artikler"
+    "maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent maincontent"
+    "h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv h2linkarkiv"
+    "linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv linkarkiv"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+
+header {
+    grid-area: header;
+    background-color: #333030;
+}
+
+img {
+    width: 180px;
+    
+           
+}
+
+nav.hovedmeny { 
+    grid-area: header;
+    grid-column: 6/13;
+    margin-top: 50px;
+    float: right;
+    display: inline;     
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav ul li a {
+    
+    color: #ccc;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+div.introbilde {
+    grid-area: introbilde;
+    background-image: url("mac5.jpg");
+    background-position: center;
+    background-size: 100% auto;  
+}
+
+div.dag {
+    grid-area: dag;
+    background-color: #3c3939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ccc;
+}
+
+div.frister {
+    grid-area: frister;
+    background-color: #333030;   
+}
+
+.frister img {
+    width: 65%;
+    margin: 40px;
+    margin-left: 100px;
+}
+
+div.forelesninger {
+    grid-area: forelesninger;
+    background-color: #333030;
+}
+
+.forelesninger img {
+    width: 65%;
+    margin: 40px;
+    margin-left: 100px;
+}
+
+div.overskriftArtikler {
+    grid-area: h2artikler;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+div.artikkel1 {
+    grid-area: maincontent;
+    grid-column: 1/5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 15px;
+}
+
+div.artikkel2 {
+    grid-area: maincontent;
+    grid-column: 5/9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 15px;
+}
+
+div.artikkel3 { 
+    grid-area: maincontent;
+    grid-column: 9/13;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 15px;
+}
+
+div.overskriftRessurser {
+    grid-area: h2linkarkiv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+div.ressurser1 {
+    grid-area: linkarkiv;
+    grid-column: 1/5;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ressurser1 img {
+    width: 35%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333030;
+    margin-top: 60px;
+}
+
